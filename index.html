@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - Premium Clothing Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <!-- <div class="top-bar" id="topBar">
+        <div class="top-bar-content">
+            <div class="top-bar-left">
+                <span>Support: (408) 555-0120</span>
+                <span>Sign up and GET 20% OFF for your first order. <strong>Sign up now</strong></span>
+            </div>
+            <div class="top-bar-right">
+                <span>All</span>
+                <button class="close-btn" onclick="closeTopBar()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="nav-icon theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-icon">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="nav-icon" id="cartBtn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-badge">50% OFF Summer Super Sale</div>
+                <h1 class="hero-title">Unleash Your Street Style with Our New Collection</h1>
+                <p class="hero-subtitle">Discover the latest trends in fashion</p>
+                <a href="#shop" class="hero-btn">
+                    Shop Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-image fade-in-up">
+                <img src="images/Fashion Models.jpeg?height=400&width=500" alt="Fashion Models">
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Logos -->
+    <section class="brands-section">
+        <div class="brands-container">
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-star"></i></div>
+                logoipsum
+            </div>
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-circle"></i></div>
+                logoipsum
+            </div>
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-diamond"></i></div>
+                logoipsum
+            </div>
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-square"></i></div>
+                logoipsum
+            </div>
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-heart"></i></div>
+                logoipsum
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Products</div>
+                <h2 class="section-title">Our Top Seller Products</h2>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <p class="features-subtitle">100% Customer Satisfaction!</p>
+                <h2 class="features-title">We Provide Best Customer Experience</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="feature-title">Free Shipping</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Money Guarantee</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24x7 Support</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="feature-title">Flexible Payment</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card" id="women">
+                    <div class="category-image">
+                        <img src="images/Women.webp" alt="Women's Fashion">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-info">
+                        <p class="category-count">250+ Products</p>
+                        <h3 class="category-title">Women</h3>
+                        <ul class="category-list">
+                            <li>Blazers</li>
+                            <li>T-Shirts and Blouses</li>
+                            <li>Dresses</li>
+                            <li>Jackets & Coats</li>
+                            <li>Jeans</li>
+                            <li>Knit</li>
+                            <li>Sandals</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="category-card" id="men">
+                    <div class="category-image">
+                        <img src="images/Men.jpg" alt="Men's Fashion">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-info">
+                        <p class="category-count">150+ Products</p>
+                        <h3 class="category-title">Men</h3>
+                        <ul class="category-list">
+                            <li>Blazers</li>
+                            <li>T-Shirts and Shirts</li>
+                            <li>Jackets & Coats</li>
+                            <li>Jeans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/Accessories.jpg" alt="Accessories">
+                        <div class="category-overlay"></div>
+                    </div>
+                    <div class="category-info">
+                        <p class="category-count">150+ Products</p>
+                        <h3 class="category-title">Accessories</h3>
+                        <ul class="category-list">
+                            <li>Bags & Purses</li>
+                            <li>Jewelry</li>
+                            <li>Sunglasses</li>
+                            <li>Watches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo-section">
+        <div class="promo-container">
+            <div class="promo-content">
+                <h2>10% Discount on your Dream Clothes</h2>
+                <p class="promo-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">36</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">12</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">52</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-image">
+                <img src="images/Fashion Promo.jpg" alt="Fashion Promo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StyleNova</h3>
+                <p>Your premier destination for fashion-forward clothing and accessories.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 StyleNova. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
