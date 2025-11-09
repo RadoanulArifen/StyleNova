@@ -43,5 +43,4 @@ It includes all the essentials of a fashion store — from hero banners and prod
 
 ---
 
-## 🧩 Project Structure
 
